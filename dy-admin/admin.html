@@ -102,10 +102,67 @@
                     <div class="card-body">
                         <h5 class="card-title">Event 1</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createEventModal">
-                            Update event
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateEventModal">
+                            Update
                         </button>
                         <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="updateEventModal" tabindex="-1" role="dialog" aria-labelledby="updateEventModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="updateEventModalLabel">update Event</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Add your form fields here -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="eventName">Event Name</label>
+                                    <input type="text" class="form-control" id="eventName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventDate">Date</label>
+                                    <input type="date" class="form-control" id="eventDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventTime">Time</label>
+                                    <input type="time" class="form-control" id="eventTime">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventLocation">Location</label>
+                                    <input type="text" class="form-control" id="eventLocation">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventDescription">Description</label>
+                                    <textarea class="form-control" id="eventDescription" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventRules">Rules</label>
+                                    <textarea class="form-control" id="eventRules" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventAmount">Amount</label>
+                                    <input type="text" class="form-control" id="eventAmount">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventTheme">Theme</label>
+                                    <input type="text" class="form-control" id="eventAmount">
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventPoster">Poster</label>
+                                    <input type="file" class="form-control-file" id="eventPoster">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
                 </div>
             </div>
